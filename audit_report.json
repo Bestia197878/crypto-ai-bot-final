@@ -1,0 +1,38 @@
+{
+  "audit_date": "2026-03-26T23:15:00.960319",
+  "summary": {},
+  "code_quality": {
+    "syntax": "PASS"
+  },
+  "tests": {
+    "status": "PASS",
+    "count": 31
+  },
+  "database": {
+    "status": "OK",
+    "trades": 15,
+    "predictions": 40
+  },
+  "security": {
+    "issues": [
+      "API keys in .env - verify .gitignore"
+    ],
+    "status": "WARNING"
+  },
+  "performance": {
+    "win_rate": 50.0,
+    "profit_factor": 2.17584634775969,
+    "total_pnl": 1847.2506692062316,
+    "rating": "GOOD"
+  },
+  "recommendations": [
+    "1. Update Pydantic config to use ConfigDict (V2 migration)",
+    "2. Add more comprehensive error handling in trading engine",
+    "3. Implement proper API key rotation mechanism",
+    "4. Add rate limiting for exchange API calls",
+    "5. Create backup strategy for database",
+    "6. Add monitoring and alerting for trading performance",
+    "7. Consider implementing position sizing optimization"
+  ],
+  "dependencies": "OK"
+}
